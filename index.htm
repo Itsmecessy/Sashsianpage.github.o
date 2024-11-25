@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebPages</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        .menu-bar {
+            position: relative;
+            background-color: rgba(255, 251, 133, 0.8);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 10px;
+            top: 2px;
+        }
+
+        .menu-bar a {
+            color: #333;
+            text-decoration: none;
+            padding: 20px 20px;
+        }
+
+        .menu-bar a:hover {
+            background-color: rgb(204, 204, 121);
+            padding: 20px 20px;
+        }
+        .background-container {
+            position: relative;
+            width: 100%;
+            height: 1220px;
+            overflow: hidden;
+        }
+        .background-container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url("bg.jpeg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            filter: blur(3px);
+            z-index: -1; 
+        }
+        .circular-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            position: relative;
+            top: 30px;
+            left: 45%;
+            filter: drop-shadow(20px 20px 20px rgb(0, 0, 0));
+        }
+        .center-container {
+            display: flex; /* Enables flexbox */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            height: 16%; /* Full height of the viewport */
+        }
+        .center-container h1 {
+            font-family: 'Arial', sans-serif; /* Clean font */
+            font-size: 3rem; /* Large text size */
+            font-weight: bold; /* Bold text */
+            color: #ffffff; /* Dark text color */
+            text-shadow: 7px 7px 4px rgb(0, 0, 0); /* Soft shadow */
+        }
+        table {
+            border-collapse: collapse;
+            margin: auto;
+            text-align: center;
+        }
+        th, td {
+            padding: 8px;
+            width: fit-content;
+            color: #000000;
+            background-color: wheat;
+            border-radius: 4%;
+        }
+        footer {
+            background-color: #2cbf9f;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            padding: 20px;
+            position: relative;
+        }
+        footer p {
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-container">
+        <img src="SASHS2.jpg" alt="SASHS2"  class="circular-image">
+        <div class="center-container">
+            <h1>STAND ALONE SHS</h1>
+        </div>
+        <nav class="menu-bar">
+            <a href="#home">HOME</a>
+            <a href="activitiess.htm">ACTIVITIES</a>
+            <a href="events.htm">EVENT</a>
+            <a href="STRANDS.htm">STRAND</a>
+            <a href="contact.htm">CONTACT</a>
+        </nav>
+    <br>
+    <br>
+    <br>
+    <main>
+        <table>
+            <tr>
+                <th>
+                    <h2>MISSION</h2>
+                    <br>
+                    <br>
+                    <p>
+                        STAND ALONE SENIOR HIGH SCHOOL will do its best to inculcate and promote academic 
+                        knowledge and to develop technical and vocational skills among its students while 
+                        instilling love of God and country. It aims to develop the values of excellence, 
+                        integrity, and service for its studentry to live and practice a decent way of 
+                        living after graduation. It vows to harness to efficient and effective delivery 
+                        of instructions from the faculty members duly sworn to give their best for the 
+                        students to have academic excellence and superior industry-appropriate skills. 
+                        As a public Stand Alone Senior High School, it hopes to acquire the facilities 
+                        needed for the students to acquire a holistic combined glocal viewpoint in 
+                        serving the cause of the country and the global community and as the historic 
+                        realization of the Philippines K to 12 Basic Education Program. 
+                    </p>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <h2>VISION</h2>
+                    <br>
+                    <br>
+                    <p>
+                        Embodied in its Rhetoric is the school's vision for its graduates to be able to 
+                        become functionally literate twenty first century learners who can be accepted 
+                        to college for all its academic tracks and who can start their own enterprises 
+                        or be absorbed in the different local and international industries and business 
+                        establishments through having National Certifications by TESDA. 
+                    </p>
+                </th>
+            </tr>
+        </table>
+    </main>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <p>&copy; Stand Alone Senior High School 2024.</p>
+    </footer>
+    </div>
+</body>
+</html>
